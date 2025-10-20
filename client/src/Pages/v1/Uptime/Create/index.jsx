@@ -701,6 +701,7 @@ const UptimeCreate = ({ isClone = false }) => {
 							items={FREQUENCIES}
 						/>
 						{monitor.type === "http" && (
+							<>
 							<Box>
 								<Typography
 									component="h2"
@@ -717,6 +718,7 @@ const UptimeCreate = ({ isClone = false }) => {
 								isChecked={useAdvancedMatching}
 								onChange={onChange}
 							/>
+							</>
 						)}
 						{monitor.type === "http" && useAdvancedMatching && (
 							<>
