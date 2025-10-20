@@ -701,6 +701,16 @@ const UptimeCreate = ({ isClone = false }) => {
 							items={FREQUENCIES}
 						/>
 						{monitor.type === "http" && (
+							<Box>
+								<Typography
+									component="h2"
+									variant="h2"
+								>
+									{t("statusCodesConfig.title")}
+								</Typography>
+								<Typography component="p">{t("statusCodesConfig.description")}</Typography>
+								<Typography component="p">{"Status Codes Number Input like Notifications"}</Typography>
+							</Box>
 							<Checkbox
 								name="useAdvancedMatching"
 								label={t("advancedMatching")}
